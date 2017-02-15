@@ -3,14 +3,14 @@
   Chapter 3 practise problems in: Common Lisp: A Gentle Introduction to Symbolic Computations.
 |#
 
-  
-#|Checks to see if the first argument is greater than the second
-Only an unevaluated list can be passed
-|#
+;;Problem 3.11
 (defun longer-than (x y)
   (< (length x)
      (length y)))
 
-;;Adds the length of the list to the list itself.
-(defun addlength (x)
-  (cons (length (list x)) (list x)))
+;;Problem 3.12
+;;Can't figure this shit out
+;;Come back to it later
+
+
+
