@@ -14,3 +14,20 @@
 
 
 
+;;Review Exercises
+
+;;3.18 - Eval Notation is much easier to understand. Box notation is fine
+;;when you're learning, but as programs get bigger so will the boxes
+
+;;3.19
+;;
+;;(cons 'graphs '(of wrath)) -> (GRAPHS OF WRATH)
+;;
+;;(list t 'is 'not nil) -> (T IS NOT NIL)
+;;
+;;(first '(list moose goose)) -> LIST
+;;
+;;(first (list 'moose 'goose)) -> MOOSE
+;;
+;;(cons 'home ('sweet 'home)) -> WRONG. Illegal function call
+;;(cons 'home '(sweet home))  -> (HOME SWEET HOME)
