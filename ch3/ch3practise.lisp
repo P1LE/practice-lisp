@@ -32,4 +32,6 @@
 ;;(cons 'home ('sweet 'home)) -> WRONG. Illegal function call
 ;;(cons 'home '(sweet home))  -> (HOME SWEET HOME)
 
-
+;;checks to see if the first element is equal to it's second argument
+(defun firstp (x y)
+  (eql x (first y)))
