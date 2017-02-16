@@ -32,6 +32,21 @@
 ;;(cons 'home ('sweet 'home)) -> WRONG. Illegal function call
 ;;(cons 'home '(sweet home))  -> (HOME SWEET HOME)
 
+;;3.22
+;;
 ;;checks to see if the first element is equal to it's second argument
 (defun firstp (x y)
   (eql x (first y)))
+
+;;adds 1 the second element of a list. It /must/ be a number
+(defun min-add1 (x)
+  (+ 1 (second x)))
+
+;;Converts Fahrenheit to Celsius, but spits out fractions if the number is lower 1 
+(defun f-to-c (n)
+  (/ (* 5 (- n 32)) 9))
+
+;;Converts Celsius to Fahrenheit, same problem with the previews functions
+(defun c-to-f (n)
+  (+ (/ (* 5 n) 9) 32))
+
