@@ -42,11 +42,11 @@
 (defun min-add1 (x)
   (+ 1 (second x)))
 
-;;Converts Fahrenheit to Celsius, but spits out fractions if the number is lower 1 
+;;Converts Fahrenheit to Celsius, but spits out fractions. 
 (defun f-to-c (n)
   (/ (* 5 (- n 32)) 9))
 
-;;Converts Celsius to Fahrenheit, same problem with the previews functions
+;;Converts Celsius to Fahrenheit, same problem with the previous function.
 (defun c-to-f (n)
   (+ (/ (* 5 n) 9) 32))
 
