@@ -1,5 +1,5 @@
 #|
- Chapter 4 exercises
+ Chapter 4 - Conditionals exercises
  Author: p1le <anon@tymoon.eu>
 |#
 
@@ -17,7 +17,7 @@
 
 ;;Exercise 4.4
 (defun ordered (x y)
-  (if (< x y) (list x y) (list y x)))
+  (if (< x y) '(x y) '(y x)))
 
 ;;Exercise 4.6
 (defun my-abs (x)
@@ -45,3 +45,22 @@
 (defun if-constrain (x max min)
   (if (> x min) min
       (if (< x max) max x)))
+
+;;Exercise 4.11
+;;Checks to see which position is zero
+(defun firstzero (x)
+  (cond ((equal (first x) 0) 'first)
+        ((equal (second x) 0) 'second)
+        (t 'third)))
+
+;;Exercise 4.12
+;;cycle adds 1 to each number, but if it's 99 or over it resets back to 1
+(defun cycle (n)
+  (cond ((>= n 99) 1)
+        (t (incf n))))
+
+;;Exercise 4.13
+(defun howcompute (x y z)
+  (cond ((equal (+ x y) z) 'sum-of)
+        ((equal (* x y) z) 'product-of)
+        (t '(beats me))))
