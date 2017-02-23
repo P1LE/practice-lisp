@@ -17,7 +17,7 @@
 
 ;;Exercise 4.4
 (defun ordered (x y)
-  (if (< x y) '(x y) '(y x)))
+  (if (< x y) (list x y) (list y x)))
 
 ;;Exercise 4.6
 (defun my-abs (x)
