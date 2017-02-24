@@ -64,3 +64,28 @@
   (cond ((equal (+ x y) z) 'sum-of)
         ((equal (* x y) z) 'product-of)
         (t '(beats me))))
+
+;;Exercise 4.15
+;;Checks if x is greater than y
+(defun geq (x y)
+  (or (and (> x y) t)
+      (and (< x y) nil)))
+
+;;Exercise 4.16
+(defun sdd (n)
+  (or (and (oddp n)  (> n 0) (* n n))
+      (and (evenp n) (< n 0) (* n 2))
+      (/ n 2)))
+
+;;Exercise 4.17
+(defun boy-or-girl (x y)
+  (cond ((or (equal x 'boy) (equal x 'girl))  (and (equal y 'child)))
+        ((or (equal x 'man) (equal x 'woman)) (and (equal y 'adult)))))
+
+;;Exercise 4.18
+;;Rock,paper, and scissors game
+(defun play (x y)
+  (cond ((and (equal x 'rock) (equal y 'scissors)) 'first-wins)
+        ((and (equal x 'scissors) (equal y 'paper)) 'first-wins)
+        ((and (equal x 'paper) (equal y 'rock)) 'first-wins)
+        (t 'second-wins)))
