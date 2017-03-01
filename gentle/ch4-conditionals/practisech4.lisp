@@ -89,3 +89,12 @@
         ((and (equal x 'scissors) (equal y 'paper)) 'first-wins)
         ((and (equal x 'paper) (equal y 'rock)) 'first-wins)
         (t 'second-wins)))
+
+;;Exercise 4.19-21 SKIPPED
+
+;;Exercise 4.22
+;;Checks to see if the water is boiling using 'cond'
+;;Checks to see if the symbol is equal to either temperature reading. Then checks if it's at the boiling point.
+(defun boilingp (x s)
+  (cond ((eql x 'fahrenheit) (> s 212))
+        ((eql x 'celsius) (> s 100))))
