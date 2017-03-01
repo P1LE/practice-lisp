@@ -26,8 +26,8 @@
 
 ;;Exercise 4.8
 (defun emphasize3 (x)
-  (cond ((equal (first x) 'good) (cons 'great (rest x)))
-        ((equal (first x) 'bad ) (cons 'awful (rest x)))
+  (cond ((eql (first x) 'good) (cons 'great (rest x)))
+        ((eql (first x) 'bad ) (cons 'awful (rest x)))
         (t (cons 'very x))))
 
 ;;Exercise 4.9
@@ -79,15 +79,15 @@
 
 ;;Exercise 4.17
 (defun boy-or-girl (x y)
-  (cond ((or (equal x 'boy) (equal x 'girl))  (and (equal y 'child)))
-        ((or (equal x 'man) (equal x 'woman)) (and (equal y 'adult)))))
+  (cond ((or (eql x 'boy) (eql x 'girl))  (and (eql y 'child)))
+        ((or (eql x 'man) (eql x 'woman)) (and (eql y 'adult)))))
 
 ;;Exercise 4.18
 ;;Rock,paper, and scissors game
 (defun play (x y)
-  (cond ((and (equal x 'rock) (equal y 'scissors)) 'first-wins)
-        ((and (equal x 'scissors) (equal y 'paper)) 'first-wins)
-        ((and (equal x 'paper) (equal y 'rock)) 'first-wins)
+  (cond ((and (eql x 'rock) (eql y 'scissors)) 'first-wins)
+        ((and (eql x 'scissors) (eql y 'paper)) 'first-wins)
+        ((and (eql x 'paper) (eql y 'rock)) 'first-wins)
         (t 'second-wins)))
 
 ;;Exercise 4.19-21 SKIPPED
