@@ -3,9 +3,8 @@
  Chapter 6 - List Data Structures
 |#
 
-;;Exercise 6.5
+;;Exercise 6.5 - What are the results of these functions?
 (defvar line '(roses are red))
-
 
 ;;(reverse line) => (RED ARE ROSES)
 ;;(first (last line)) => RED
@@ -16,3 +15,4 @@
 ;;(list (first line) (last line)) => (ROSES (RED))
 ;;(cons (last line) line) => ((RED) ROSES ARE RED)
 ;;(remove 'are line) => (ROSES RED)
+
