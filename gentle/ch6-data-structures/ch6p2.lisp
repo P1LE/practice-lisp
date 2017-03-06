@@ -28,4 +28,5 @@
   (reverse (rest (reverse x))))
 
 (defun palindromep (x)
+  "checks if a list is palindrome"
   (equal x (reverse x)))
