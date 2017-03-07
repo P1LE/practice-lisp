@@ -56,9 +56,11 @@
   (null (set-difference x y)))
 
 (defun set-equal (x y)
+  "checks is the lists are equal"
   (and (subsetp x y)
        (subsetp y x)))
 
 (defun proper-subset (x y)
+  "checks if a list is proper subset"
   (and (subsetp x y)
        (not (subsetp y x))))
