@@ -1,7 +1,6 @@
 #|
  Author: p1le <anon@tymoon.eu>
  Chapter 6 - List Data Structures
- Exercise 6.6
 |#
 
 ;;These functions return the last element of a list
@@ -30,3 +29,25 @@
 (defun palindromep (x)
   "checks if a list is palindrome"
   (equal x (reverse x)))
+
+(defun make-palindrome (x)
+  "Makes a list palindrome"
+  (append (reverse x) x))
+
+;;checks if a list contains "the, a or an"
+(defun contains-the-article (sent)
+  (intersection sent '(the and an)))
+
+(defun contains-the-article2 (sent)
+  (or (member 'the sent)
+      (member 'a sent)
+      (member 'an sent)))
+
+(defun contains-the-article3 (sent)
+  (not (and (not (member 'the sent))
+            (not (member 'a sent))
+            (not (member 'an sent)))))
+
+(defun add-vowels (x)
+  "adds the vowels to a list"
+  (union x '(a e i o u)))
