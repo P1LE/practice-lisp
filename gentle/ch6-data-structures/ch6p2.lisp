@@ -51,3 +51,14 @@
 (defun add-vowels (x)
   "adds the vowels to a list"
   (union x '(a e i o u)))
+
+(defun my-subset (x y)
+  (null (set-difference x y)))
+
+(defun set-equal (x y)
+  (and (subsetp x y)
+       (subsetp y x)))
+
+(defun proper-subset (x y)
+  (and (subsetp x y)
+       (not (subsetp y x))))
