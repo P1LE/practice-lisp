@@ -20,5 +20,6 @@
 ;;;(mapcar #'zerop '(2 0 3 4 0 -5 -6))
 
 ;;;7.4 - Write a function that checks if a number is greater than 5 and use MAPCAR to check a list of numbers.
+;;; (mapcar #'greater-than-five-p '(.. n)
 (defun greater-than-five-p (n)
   (if (> n 5) t nil))
