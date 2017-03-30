@@ -3,6 +3,10 @@
  Chapter 7: Applicative Programming
 |#
 
+#|
+This exercise we will write a program to transpose
+a song from one key to another.
+|#
 (defvar note-table
   '((c         .  1)
     (c-sharp   .  2)
